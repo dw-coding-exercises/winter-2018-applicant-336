@@ -1,7 +1,7 @@
 (ns my-exercise.home
   (:require [hiccup.page :refer [html5]]
             [ring.util.anti-forgery :refer [anti-forgery-field]]
-            [my-exercise.us-state :as us-state]))
+            [my-exercise.util.us-state :as us-state]))
 
 (defn header [_]
   [:head
