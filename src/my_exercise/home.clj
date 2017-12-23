@@ -131,8 +131,20 @@
     [:div.button
      [:button {:type "submit"} "Search"]]]])
 
+(defn try-out-links [_]
+  [:div.test-links
+    [:div "Some addresses that will return upcoming elections"
+      [:ul
+        [:li
+          [:a {:href "/search?street=124%20SW%20Madison%20St&city=Portland&state=OR&zip=97204"}
+              "124 SW Madison St, Portland, OR 97204"]]
+        [:li
+          [:a {:href "/search?street=325%20E%20Lee%20Hwy&city=Chilhowie&state=VA&zip24319"}
+              "325 E Lee Hwy, Chilhowie, VA 24319"]]]]])
+
 (defn page [request]
   (html5
    (header request)
    (instructions request)
-   (address-form request)))
+   (address-form request)
+   (try-out-links request)))
