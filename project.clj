@@ -7,5 +7,5 @@
                  [compojure "1.6.0"]
                  [hiccup "1.0.5"]]
   :plugins [[lein-ring "0.12.1"]]
-  :ring {:handler my-exercise.core/handler}
+  :ring {:handler my-exercise.core/handler :auto-reload? true}
   :aliases {"submit" ["run" "-m" "my-exercise.submit"]})
