@@ -28,6 +28,6 @@
 (defn ids-from-address
   "Returns a set of possible ocd-ids given an address."
   [{:keys [city state]}]
-  #{(build-id {}) ; country:us
-    (build-id {:state state})
-    (build-id {:state state :place city})})
+  (hash-set (build-id {}) ; country:us
+            (build-id {:state state})
+            (build-id {:state state :place city})))
