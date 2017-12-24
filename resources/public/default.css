@@ -42,3 +42,21 @@ input:focus {
 button {
   margin-left: .5em;
 }
+
+/* A few basic styles for the search page */
+
+.upcoming-elections {
+  margin-top: 1em;
+}
+
+.elections-header {
+  font-weight: bold;
+}
+
+.election-description {
+  margin-right: 1em;
+}
+
+.no-elections {
+  font-style: italic;
+}
